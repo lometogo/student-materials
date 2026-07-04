@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Networking: What, When, and How</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Serif+4:wght@400;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1b2a4a;
+    --navy-deep: #10192e;
+    --cream: #f8f4ea;
+    --gold: #b8912f;
+    --gold-light: #e4c876;
+    --ink: #2a2a2a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    margin: 0;
+    line-height: 1.65;
+  }
+  .page-header {
+    background: var(--navy);
+    color: var(--cream);
+    padding: 40px 30px 30px;
+    text-align: center;
+  }
+  .page-header h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    margin: 0 0 8px;
+    font-size: 2em;
+  }
+  .page-header .subtitle {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    color: var(--gold-light);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+  .content {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 30px 80px;
+  }
+  h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--navy);
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 10px;
+  }
+  .opening-statement {
+    background: #fff;
+    border-left: 4px solid var(--gold);
+    padding: 20px 26px;
+    margin-bottom: 45px;
+    font-style: italic;
+  }
+  .article-section {
+    margin-bottom: 55px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd3ba;
+  }
+  .article-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--navy);
+    font-size: 1.4em;
+    margin-bottom: 4px;
+  }
+  .citation {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 0.85em;
+    color: #6b6b6b;
+    margin-bottom: 20px;
+  }
+  .citation a {
+    color: var(--navy);
+  }
+  ol.points {
+    padding-left: 22px;
+  }
+  ol.points li {
+    margin-bottom: 14px;
+  }
+  .vocab-ref {
+    font-weight: 700;
+    color: var(--navy-deep);
+  }
+  sup.vocab-num a {
+    color: var(--gold);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  sup.vocab-num a:hover {
+    text-decoration: underline;
+  }
+  .discussion-points {
+    margin-top: 24px;
+    background: var(--navy);
+    color: var(--cream);
+    padding: 20px 26px;
+    border-radius: 3px;
+  }
+  .discussion-points h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--gold-light);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+  }
+  .discussion-points .placeholder {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 0.9em;
+    opacity: 0.6;
+    font-style: italic;
+  }
+  .discussion-points ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .discussion-points ul li {
+    margin-bottom: 12px;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 0.97em;
+  }
+  .discussion-points ul li:last-child {
+    margin-bottom: 0;
+  }
+  .discussion-points .lead-note {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 0.85em;
+    color: var(--gold-light);
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  .definitions-panel {
+    background: var(--navy-deep);
+    color: var(--cream);
+    padding: 35px 30px;
+    border-radius: 4px;
+    margin-top: 60px;
+    border: 1px solid var(--gold);
+  }
+  .definitions-panel h2 {
+    color: var(--gold-light);
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 10px;
+  }
+  .definitions-panel .vocab-entry {
+    margin-bottom: 16px;
+    font-family: 'Source Serif 4', Georgia, serif;
+  }
+  .definitions-panel .vocab-entry strong {
+    color: var(--gold-light);
+  }
+  .definitions-panel .vocab-entry .back-link {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 0.8em;
+    margin-left: 6px;
+  }
+  .definitions-panel .vocab-entry .back-link a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+  .footnotes {
+    margin-top: 50px;
+  }
+  .footnote-entry {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 0.9em;
+    color: #6b6b6b;
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Networking: What, When, and How</h1>
+  <div class="subtitle">Business English Coaching &mdash; Session 2</div>
+</div>
+
+<div class="content">
+
+<div class="opening-statement">
+  Eloise, I've curated four articles that give a good overview of networking and how it can best be used in your profession. They were quite long so I summarized points we can discuss. I've included links so you can dig deeper if you like.
+</div>
+
+<!-- ARTICLE 1: NYSB -->
+<div class="article-section">
+  <div class="article-title">Personal Branding for Attorneys: Why It Matters and How To Do It</div>
+  <div class="citation">New York State Bar Association &mdash; <a href="https://nysba.org/personal-branding-for-attorneys-why-it-matters-and-how-to-do-it/" target="_blank">nysba.org</a></div>
+  <ol class="points">
+    <li><strong>Why it matters now:</strong> Client behavior has changed &mdash; clients search online, review LinkedIn, and form impressions well before any consultation takes place, which is why branding didn't used to be part of the conversation but is now.</li>
+    <li><strong>What branding actually is (and isn't):</strong> Personal branding is not about slick marketing or trying to be someone you are not &mdash; it's about being <span id="ref-1" class="vocab-ref">intentional</span><sup class="vocab-num"><a href="#def-1">1</a></sup> with how you present your reputation, expertise, and personality. <span id="ref-2" class="vocab-ref">Authenticity</span><sup class="vocab-num"><a href="#def-2">2</a></sup> is the safeguard: a mismatch between how you market yourself and who you actually are gets noticed quickly.</li>
+    <li><strong>What it does for your career:</strong> Branding acts as a <span id="ref-3" class="vocab-ref">differentiator</span><sup class="vocab-num"><a href="#def-3">3</a></sup> in a crowded field and creates opportunities beyond direct client work &mdash; speaking invitations, teaching, leadership roles in professional organizations. The article's memorable framing: your brand is what people say about you when you're not in the room.</li>
+    <li><strong>How to build one:</strong> Start with a one-sentence brand statement (what you do, for whom), then build visibility around it &mdash; refreshing your LinkedIn profile, rewriting your bio in language that conveys your approach rather than generic practice areas, and adding content like short articles or commentary.</li>
+  </ol>
+  <div class="discussion-points">
+    <h4>Discussion Points</h4>
+    <ul>
+      <li>What steps are you taking early on to build your social media presence, with forums like LinkedIn &mdash; or is this irrelevant in China?</li>
+      <li>You're in-house counsel &mdash; do you feel that is advantageous or disadvantageous to building your personal brand?</li>
+      <li>Point 3 talks about opportunities beyond direct client work: teaching, speaking, leadership in professional organizations. How do you feel about these more visible activities?</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ARTICLE 2: ABA -->
+<div class="article-section">
+  <div class="article-title">Networking Strategies for Lawyers: Turn Professional Connections into Leads</div>
+  <div class="citation">American Bar Association &mdash; <a href="https://www.americanbar.org/groups/law_practice/resources/law-technology-today/2024/networking-strategies-for-lawyers-turn-professional-connections-into-leads/" target="_blank">americanbar.org</a></div>
+  <ol class="points">
+    <li><strong>The core distinction:</strong> Effective networking is about <span id="ref-4" class="vocab-ref">cultivating</span><sup class="vocab-num"><a href="#def-4">4</a></sup> meaningful relationships rather than collecting contacts &mdash; turning interactions into value through genuine engagement, not volume of connections.</li>
+    <li><strong>The referral engine:</strong> Regularly engaging with peers increases the chance of receiving client referrals, and this often works reciprocally &mdash; you refer cases outside your expertise, and colleagues do the same, creating a steady two-way stream.</li>
+    <li><strong>Learning through relationships:</strong> Interacting with peers and more experienced practitioners is a continuous education channel &mdash; gaining insight into different strategies and industry trends that keep you competitive.</li>
+    <li><strong>The follow-up as the differentiator:</strong> Following up after initial interactions &mdash; a thank-you email, sharing a relevant article, a quick call &mdash; is what keeps conversations alive and turns a single meeting into a deepening relationship over time.</li>
+  </ol>
+  <div class="discussion-points">
+    <h4>Discussion Points</h4>
+    <ul>
+      <li>Do you agree with the distinction between making contacts and cultivating relationships? I find it's actually easier to cultivate, because you naturally go deeper with fewer people &mdash; and that's where real bonds are made.</li>
+      <li>I think point #4, follow-up as the differentiator, is the most valuable tool I've ever used. Do you find opportunities to do that with any US attorneys? This could be valuable down the road if you decide to work abroad.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ARTICLE 3: Latitude Legal -->
+<div class="article-section">
+  <div class="article-title">Personal Branding, Visibility, and Career Growth for Attorneys in Today's Legal Job Market</div>
+  <div class="citation">Latitude Legal &mdash; <a href="https://latitudelegal.com/resources/blog/attorney-career-growth-visibility/" target="_blank">latitudelegal.com</a></div>
+  <ol class="points">
+    <li><strong>Reframing the discomfort:</strong> The phrase "personal brand" can feel like self-promotion, but the article defines it as your professional reputation &mdash; what comes to mind when someone mentions your name, and what colleagues remember about working with you.</li>
+    <li><strong>Stories over statements:</strong> Branding is about sharing what makes you unique, and the article recommends keeping track of concrete stories (a time you stayed calm in a crisis, a time you led a team through change) because stories are what people remember and what differentiate candidates in interviews and networking conversations.</li>
+    <li><strong>The business-bridge skill:</strong> Employers increasingly value professionals who can translate technical or legal risk into business implications and help <span id="ref-5" class="vocab-ref">stakeholders</span><sup class="vocab-num"><a href="#def-5">5</a></sup> weigh trade-offs &mdash; the article gives the example of a biotech company lawyer needing to explain how regulation affects product strategy. <span id="ref-6" class="vocab-ref">Cross-functional</span><sup class="vocab-num"><a href="#def-6">6</a></sup> collaboration is presented as a real differentiator, not a nice-to-have.</li>
+    <li><strong>Visibility as the deciding factor between equals:</strong> A recurring theme across the panel discussion the article summarizes: how professionals communicate their work &mdash; not just the work itself &mdash; determines who gets remembered for future opportunities.</li>
+  </ol>
+  <div class="discussion-points">
+    <h4>Discussion Points</h4>
+    <div class="lead-note">Points 3 and 4 are the meat here.</div>
+  </div>
+</div>
+
+<!-- ARTICLE 4: Barbri -->
+<div class="article-section">
+  <div class="article-title">10 Networking Tips for Young Lawyers</div>
+  <div class="citation">Barbri &mdash; <a href="https://www.barbri.com/resources/10-networking-tips-for-young-lawyers" target="_blank">barbri.com</a></div>
+  <ol class="points">
+    <li><strong>Reframe the concept itself:</strong> Instead of "networking," think of it as just building relationships or having professional conversations &mdash; removing the transactional framing that makes people avoid it.</li>
+    <li><strong>Curiosity beats pitching:</strong> Show genuine curiosity about the other person &mdash; what they do, what they're currently working on &mdash; and ask questions that invite stories rather than one-word answers. The article notes most people don't really listen; they just wait for their turn to speak.</li>
+    <li><strong>Come prepared, but don't over-script:</strong> You don't need a script, but having a few topics ready helps &mdash; recent cases in your field, a legal development, or the event itself. This requires staying current on commercial/industry awareness.</li>
+    <li><strong>Treat it as a trainable skill:</strong> Networking is something to prepare, practice, and keep improving &mdash; over time it stops feeling like "networking" and starts feeling like what it really is: building genuine professional relationships. This is your <span id="ref-7" class="vocab-ref">niche</span><sup class="vocab-num"><a href="#def-7">7</a></sup> to develop deliberately, not something you either have or don't.</li>
+  </ol>
+  <div class="discussion-points">
+    <h4>Discussion Points</h4>
+    <div class="lead-note">We're beginning to see repetition here, naturally &mdash; but point #4 is so true.</div>
+    <ul>
+      <li>Developing and strengthening this skill is key to reaching your career goals.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- MASTER DEFINITIONS PANEL -->
+<div class="definitions-panel">
+  <h2>Vocabulary</h2>
+  <div class="vocab-entry" id="def-1">1. <strong>intentional</strong>: (in-TEN-shuh-nul) - done on purpose, deliberate; <strong>purposeful, deliberate</strong>. She sent an intentional message to the recruiter, not a random one. <span class="back-link"><a href="#ref-1">&uarr; back</a></span></div>
+  <div class="vocab-entry" id="def-2">2. <strong>authenticity</strong>: (aw-then-TIS-i-tee) - the quality of being genuine or true to oneself; <strong>genuineness, sincerity</strong>. Clients notice authenticity long before they read a resume. <span class="back-link"><a href="#ref-2">&uarr; back</a></span></div>
+  <div class="vocab-entry" id="def-3">3. <strong>differentiator</strong>: (dif-uh-REN-shee-ay-ter) - a factor that sets something apart from others; <strong>distinguishing factor, distinction</strong>. Her bilingual litigation experience is her strongest differentiator. <span class="back-link"><a href="#ref-3">&uarr; back</a></span></div>
+  <div class="vocab-entry" id="def-4">4. <strong>cultivate</strong>: (KUL-tuh-vayt) - to develop or improve something through deliberate effort; <strong>nurture, develop</strong>. She cultivated a relationship with the partner over several months. <span class="back-link"><a href="#ref-4">&uarr; back</a></span></div>
+  <div class="vocab-entry" id="def-5">5. <strong>stakeholder</strong>: (STAYK-hohl-der) - a person with an interest or concern in something; <strong>interested party, participant</strong>. Every stakeholder in the deal wanted a say in the timeline. <span class="back-link"><a href="#ref-5">&uarr; back</a></span></div>
+  <div class="vocab-entry" id="def-6">6. <strong>cross-functional</strong>: (kraws-FUNK-shuh-nul) - involving multiple departments or areas of expertise; <strong>interdepartmental, cross-disciplinary</strong>. The project required cross-functional collaboration between legal and marketing. <span class="back-link"><a href="#ref-6">&uarr; back</a></span></div>
+  <div class="vocab-entry" id="def-7">7. <strong>niche</strong>: (NEESH) - a specialized area or focus within a broader field; <strong>specialty, focus area</strong>. She built her niche around cross-border crypto litigation. <span class="back-link"><a href="#ref-7">&uarr; back</a></span></div>
+</div>
+
+<!-- FOOTNOTES -->
+<div class="footnotes">
+  <h2>Footnotes</h2>
+  <div class="footnote-entry">[Terence to insert]</div>
+</div>
+
+</div>
+</body>
+</html>
