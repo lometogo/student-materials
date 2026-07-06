@@ -99,3 +99,6 @@ Output the full updated HTML file with all previous formatting intact.
 - Students are Chinese professionals pursuing multinational roles
 - Primary sharing channel: WeChat
 - WeChat ID: Chiangmai3047
+
+### Filename Convention
+When building a vocab treatment file (Pass 2), Claude proposes a filename based on the article's topic, following the existing pattern (lowercase, hyphens or underscores, descriptive of the subject — e.g. `iran-war-vocab.html`). Terence confirms or edits the filename before the file is finalized.
