@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Recording — Interview Practice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0f1c30;
+    --navy-deep: #0a1420;
+    --cream: #f7f3ea;
+    --gold: #c9a227;
+    --gold-soft: #e0c674;
+    --text-body: #2a2f38;
+    --text-muted: #6b7280;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--text-body);
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.7;
+  }
+
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+
+  header.doc-header {
+    margin-bottom: 32px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--navy);
+    margin: 0 0 6px;
+  }
+
+  .meta {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+  }
+
+  .meta span + span::before {
+    content: "•";
+    margin: 0 8px;
+    color: var(--gold);
+  }
+
+  /* ---- Audio player block ---- */
+  .audio-panel {
+    background: var(--navy);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 28px 0 40px;
+    box-shadow: 0 4px 14px rgba(15, 28, 48, 0.18);
+  }
+
+  .audio-panel .audio-label {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gold-soft);
+    margin-bottom: 10px;
+  }
+
+  audio {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+  }
+
+  /* Style the native player where browsers allow it */
+  audio::-webkit-media-controls-panel {
+    background-color: var(--navy-deep);
+  }
+
+  .audio-fallback {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.85rem;
+    color: var(--cream);
+    opacity: 0.75;
+  }
+
+  .audio-fallback a { color: var(--gold-soft); }
+
+  /* ---- Coaching note callout ---- */
+  .coach-note {
+    border-left: 3px solid var(--gold);
+    background: rgba(201, 162, 39, 0.08);
+    padding: 14px 18px;
+    margin: 24px 0;
+    font-family: 'Source Sans 3', sans-serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--navy);
+  }
+
+  .coach-note .coach-label {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+
+  /* ---- Transcript body ---- */
+  .transcript {
+    font-size: 1.05rem;
+  }
+
+  .transcript p {
+    margin: 0 0 18px;
+  }
+
+  .speaker-label {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    color: var(--navy);
+    margin-right: 6px;
+  }
+
+  sup.vocab-ref {
+    color: var(--gold);
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 1px;
+  }
+
+  /* ---- Vocabulary panel ---- */
+  .vocab-section {
+    margin-top: 56px;
+    border-top: 2px solid var(--gold);
+    padding-top: 28px;
+  }
+
+  .vocab-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin: 0 0 20px;
+  }
+
+  .vocab-panel {
+    background: var(--navy);
+    color: var(--cream);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .vocab-panel .num {
+    color: var(--gold);
+    font-weight: 700;
+    margin-right: 6px;
+  }
+
+  .vocab-panel .word {
+    font-weight: 700;
+    color: var(--gold-soft);
+  }
+
+  .vocab-panel .pron {
+    color: #b9c2cf;
+    font-style: italic;
+  }
+
+  .vocab-panel .syn {
+    font-weight: 700;
+  }
+
+  .vocab-panel .example {
+    display: block;
+    margin-top: 4px;
+    color: #d8dee6;
+  }
+
+  footer.doc-footer {
+    margin-top: 64px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="doc-header">
+    <h1>Ace the Interview: The Three-Move Framework</h1>
+    <div class="meta">
+      <span>Interview Coaching Recording</span>
+      <span>~2 min</span>
+    </div>
+  </header>
+
+  <!-- AUDIO PLAYER -->
+  <div class="audio-panel">
+    <div class="audio-label">Listen to the recording</div>
+    <audio controls preload="metadata">
+      <source src="audio/terence-interview-audio.mp3" type="audio/mpeg">
+      <span class="audio-fallback">
+        Your browser doesn't support inline audio.
+        <a href="audio/terence-interview-audio.mp3">Download the recording</a> instead.
+      </span>
+    </audio>
+  </div>
+
+  <!-- COACHING NOTE -->
+  <div class="coach-note">
+    <span class="coach-label">Coach's Note</span>
+    Practice using this many times until you can say it confidently.
+  </div>
+
+  <!-- TRANSCRIPT -->
+  <div class="transcript">
+
+    <p>
+      Your English doesn't have to be perfect to ace the Western interview. What you do need is a <strong>framework</strong><sup class="vocab-ref">1</sup> or a structure that prepares you for any question they throw at you. Say for instance if they ask you why should we hire you? You answer in three moves.
+    </p>
+
+    <p>
+      At my last company I <strong>turned around</strong><sup class="vocab-ref">2</sup> a failing product <strong>launch</strong><sup class="vocab-ref">3</sup> in six weeks and the product became our biggest seller. That's your <strong>proof</strong><sup class="vocab-ref">4</sup>. I know that you guys are expanding fast and that's where I do my best work.
+    </p>
+
+    <p>
+      That's where you're the <strong>fit</strong><sup class="vocab-ref">5</sup> to the company. Second thing to remember is to <strong>interview the interviewer</strong><sup class="vocab-ref">6</sup>. Now it's important of course that you're <strong>prepared</strong><sup class="vocab-ref">7</sup> and with this framework I teach you you'll be able to be prepared to answer the questions your interviewer asks you.
+    </p>
+
+    <p>
+      But equally important is the questions that you ask the interviewer either during the course of the interview or at the end. So make sure you have two or three very good questions to ask. For instance, what does success look like in this job in 90 days? Or what kinds of things does the person taking this job, what are the biggest or what's the biggest <strong>challenge</strong><sup class="vocab-ref">8</sup> this job faces in the next six months? Or what do your best performers have in common? Smart, confident, comfortable questions.
+    </p>
+
+    <p>
+      These questions alone or asking questions like them will make you <strong>stand out</strong><sup class="vocab-ref">9</sup> from most of the other interviewees they face. And third, remember the interviewer is on your side. Remember this isn't their real job.
+    </p>
+
+    <p>
+      They're actually taking time away from their job to do these interviews. It's necessary but they really want to get back to the <strong>pressing things</strong><sup class="vocab-ref">10</sup> that are happening in their daily life, in their job. So remember they want you to succeed.
+    </p>
+
+    <p>
+      Work with them. Show them that you're the <strong>candidate</strong><sup class="vocab-ref">11</sup> through <strong>confidence</strong><sup class="vocab-ref">12</sup>, a good ability to answer questions, and a <strong>comfort level</strong><sup class="vocab-ref">13</sup>. Finally, <strong>mindset</strong><sup class="vocab-ref">14</sup>.
+    </p>
+
+    <p>
+      Breathe, prepare, and expect the best. Would you like to have a, want a full <strong>coaching session</strong><sup class="vocab-ref">15</sup> where we go over these points in great detail so that you'll feel prepared when you walk into the interview? If so, contact me and we'll set up a time to talk.
+    </p>
+
+  </div>
+
+  <!-- VOCABULARY -->
+  <div class="vocab-section">
+    <h2>Vocabulary</h2>
+
+    <div class="vocab-panel">
+      <span class="num">1.</span>
+      <span class="word">Framework</span>
+      <span class="pron">(FRAME-werk)</span> — a basic structure or set of ideas that supports a plan or system;
+      <span class="syn">structure, system, blueprint</span>.
+      <span class="example">She built a framework for evaluating each proposal fairly.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">2.</span>
+      <span class="word">Turned around</span>
+      <span class="pron">(turnd uh-ROWND)</span> — changed something from failing to succeeding;
+      <span class="syn">revived, reversed, salvaged</span>.
+      <span class="example">The new manager turned around the struggling department in just one quarter.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">3.</span>
+      <span class="word">Launch</span>
+      <span class="pron">(lawnch)</span> — the introduction of a new product to the market;
+      <span class="syn">release, rollout, debut</span>.
+      <span class="example">The company celebrated the successful launch of its latest app.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">4.</span>
+      <span class="word">Proof</span>
+      <span class="pron">(proof)</span> — evidence that something is true or has happened;
+      <span class="syn">evidence, confirmation, verification</span>.
+      <span class="example">His sales record was proof that he could handle the role.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">5.</span>
+      <span class="word">Fit</span>
+      <span class="pron">(fit)</span> — a good match between a person's skills or style and a job or organization;
+      <span class="syn">match, compatibility, alignment</span>.
+      <span class="example">Her collaborative style made her a strong fit for the team.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">6.</span>
+      <span class="word">Interview the interviewer</span>
+      <span class="pron">(IN-ter-vyoo thee IN-ter-vyoo-er)</span> — to ask the person conducting the interview thoughtful questions in return, showing engagement and confidence;
+      <span class="syn">engage the interviewer, question back</span>.
+      <span class="example">He decided to interview the interviewer by asking about the team's biggest challenges.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">7.</span>
+      <span class="word">Prepared</span>
+      <span class="pron">(pri-PAIRD)</span> — ready for something because of planning or practice beforehand;
+      <span class="syn">ready, equipped, primed</span>.
+      <span class="example">She felt prepared after rehearsing her answers all week.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">8.</span>
+      <span class="word">Challenge</span>
+      <span class="pron">(CHAL-inj)</span> — a difficult task or problem that tests someone's ability;
+      <span class="syn">difficulty, obstacle, hurdle</span>.
+      <span class="example">Meeting the tight deadline was the biggest challenge of the project.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">9.</span>
+      <span class="word">Stand out</span>
+      <span class="pron">(stand owt)</span> — to be noticeably better or different from others in a group;
+      <span class="syn">distinguish yourself, shine, be noticed</span>.
+      <span class="example">Asking thoughtful questions helped her stand out from other candidates.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">10.</span>
+      <span class="word">Pressing things</span>
+      <span class="pron">(PRESS-ing things)</span> — urgent matters that need immediate attention;
+      <span class="syn">urgent matters, priorities, pressing issues</span>.
+      <span class="example">He had to step away from the meeting to deal with some pressing things at the office.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">11.</span>
+      <span class="word">Candidate</span>
+      <span class="pron">(KAN-di-dayt)</span> — a person being considered for a job or position;
+      <span class="syn">applicant, contender, nominee</span>.
+      <span class="example">Only three candidates were selected for the final round.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">12.</span>
+      <span class="word">Confidence</span>
+      <span class="pron">(KON-fi-dens)</span> — a feeling of self-assurance in one's abilities;
+      <span class="syn">self-assurance, certainty, poise</span>.
+      <span class="example">His confidence during the presentation impressed the entire panel.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">13.</span>
+      <span class="word">Comfort level</span>
+      <span class="pron">(KUM-fert LEV-el)</span> — the degree to which someone feels relaxed and at ease in a situation;
+      <span class="syn">ease, composure, relaxed manner</span>.
+      <span class="example">Practicing beforehand raised her comfort level during the actual interview.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">14.</span>
+      <span class="word">Mindset</span>
+      <span class="pron">(MYND-set)</span> — a person's established set of attitudes or way of thinking;
+      <span class="syn">attitude, outlook, mentality</span>.
+      <span class="example">A positive mindset helped him stay calm under pressure.</span>
+    </div>
+
+    <div class="vocab-panel">
+      <span class="num">15.</span>
+      <span class="word">Coaching session</span>
+      <span class="pron">(KOHCH-ing SESH-un)</span> — a meeting focused on guiding and training someone to improve a specific skill;
+      <span class="syn">training session, mentoring meeting</span>.
+      <span class="example">They scheduled a coaching session to practice answering tough interview questions.</span>
+    </div>
+
+  </div>
+
+  <footer class="doc-footer">
+    lometogo.github.io/student-materials
+  </footer>
+
+</div>
+
+</body>
+</html>
