@@ -29,11 +29,13 @@ git push origin main
 
 Every vocab treatment HTML file must use this design system consistently:
 
-- **Header:** Dark navy (`#1a2744`)
-- **Body background:** Warm cream (`#fdf6e3`)
-- **Definition panel:** Dark background with gold accents
-- **Fonts:** Playfair Display (headings), Source Serif 4 (body) — loaded from Google Fonts
-- **Output:** Single self-contained HTML file — all CSS inline, no external dependencies except Google Fonts
+* Header: Dark navy (`#1b2a4a`), with a deeper navy (`#101c33`) for emphasis/hover states
+* Body background: Warm cream (`#faf6ec`)
+* Definition panel: Light cream panel (`#f2ead9`) with a thin gold border, gold (`#b8922f`) accent numbers and back-links
+* Accent gold: `#b8922f` (primary), `#d4af5a` (lighter variant for links/highlights)
+* Body ink/text color: `#22283a`
+* Fonts: Playfair Display (headings), Source Serif 4 (body prose), Source Sans 3 (definitions panel & UI text) — loaded from Google Fonts
+* Output: Single self-contained HTML file — all CSS inline, no external dependencies except Google Fonts
 
 ---
 
