@@ -1,6 +1,7 @@
 # Student Materials — CLAUDE.md
-
-This repo contains vocab treatment HTML files for Terence Collins' Business English coaching students. Files are hosted on GitHub Pages and shared with students via URL — primarily WeChat, but the link works anywhere (email, QQ, SMS, or any other channel).
+ask clarifying questions before you execute.
+This repo contains vocab treatment HTML files for Terence Collins' Business English coaching students.
+ Files are hosted on GitHub Pages and shared with students via URL — primarily WeChat, but the link works anywhere (email, QQ, SMS, or any other channel).
 
 ---
 
@@ -45,7 +46,7 @@ Every vocab treatment HTML file must use this design system consistently:
 Reproduce the full article text word for word. No omissions, no condensing, no summarizing. This is non-negotiable.
 
 ### What to Remove
-Strip newsletter calls-to-action embedded in the article body (e.g. "Join X others on WhatsApp") that are not part of the article text itself.
+Strip newsletter calls-to-action embedded in any article body (e.g. "Join X others on WhatsApp") that are not part of the article text itself.
 
 ### Vocabulary Marking
 - Bold every target vocabulary word at its **first appearance** only
@@ -59,7 +60,7 @@ All on one line, word and synonyms bolded:
 **Word**: (phonetic respelling in plain English, e.g. "kuh-RIK-yuh-lum" — NOT IPA symbols) - definition; **synonyms**. Example sentence.
 
 ### Vocabulary Selection
-Target words above 6th grade US reading level. Use the two-pass workflow:
+Target words above 8th grade US reading level. Use the two-pass workflow:
 - **Pass 1:** Generate candidate word list for Terence's review and approval
 - **Pass 2:** Build the full HTML after word list is confirmed
 
@@ -99,7 +100,7 @@ Output the full updated HTML file with all previous formatting intact.
 - Business English and interview preparation coach based in Guangzhou, China
 - 25+ years senior corporate experience: IBM, Fujitsu, Huawei and others
 - Students are Chinese professionals pursuing multinational roles
-- Primary sharing channel: WeChat
+- Primary sharing channel: WeChat and Rednote
 - WeChat ID: Chiangmai3047
 
 ### Filename Convention
