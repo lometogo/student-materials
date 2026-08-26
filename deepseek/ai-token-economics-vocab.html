@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocabulary Treatment — Ways to Think About Token Pricing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1b2a4a;
+    --navy-deep: #101c33;
+    --cream: #faf6ec;
+    --panel: #f2ead9;
+    --gold: #b8922f;
+    --gold-light: #d4af5a;
+    --ink: #22283a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Serif 4', serif;
+    line-height: 1.7;
+  }
+  header {
+    background: var(--navy);
+    color: var(--cream);
+    padding: 2.5rem 2rem;
+    text-align: center;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin: 0 0 0.4rem;
+  }
+  header p {
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--gold-light);
+    margin: 0;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+  }
+  header .credit {
+    margin-top: 0.55rem;
+    font-size: 0.92rem;
+    letter-spacing: 0.01em;
+  }
+  header .credit.date {
+    margin-top: 0.2rem;
+    font-size: 0.86rem;
+  }
+  header .credit a {
+    color: var(--gold-light);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  header .credit a:hover {
+    color: #ffffff;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 1rem;
+  }
+  article p {
+    font-size: 1.08rem;
+    margin: 0 0 1.3rem;
+  }
+  a.vocab {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+  }
+  a.vocab sup {
+    color: var(--gold);
+    font-weight: 700;
+    margin-left: 1px;
+  }
+  a.vocab:hover {
+    color: var(--navy-deep);
+    border-bottom: 1px solid var(--navy-deep);
+  }
+  .definitions {
+    max-width: 720px;
+    margin: 1.5rem auto 3rem;
+    padding: 2rem 2rem 2.2rem;
+    background: var(--panel);
+    border: 1px solid var(--gold);
+    border-radius: 6px;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  .definitions h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-size: 1.3rem;
+    margin: 0 0 1.2rem;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 0.6rem;
+  }
+  .def-entry {
+    font-size: 0.97rem;
+    margin: 0 0 0.9rem;
+    line-height: 1.6;
+  }
+  .def-entry strong {
+    color: var(--navy);
+  }
+  .def-entry .back {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 0.4rem;
+  }
+  .def-entry .back:hover {
+    color: var(--navy-deep);
+  }
+  footer {
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #8a8672;
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ways to Think About Token Pricing</h1>
+  <p class="credit">Thanks to <a href="https://www.ben-evans.com/benedictevans/2026/7/9/ways-to-think-about-token-pricing" target="_blank" rel="noopener">Benedict Evans</a></p>
+  <p class="credit date">9 July 2026</p>
+</header>
+
+<main>
+  <article>
+    <p>There are only two things you can say with certainty about token prices: we’re in a <a id="word1" href="#def1" class="vocab"><strong>supply crunch</strong><sup>1</sup></a>, and this is unstable. All of the variables are in play, and the market will get <a id="word2" href="#def2" class="vocab"><strong>shaken out</strong><sup>2</sup></a> over the next few years to arrive at a new <a id="word3" href="#def3" class="vocab"><strong>equilibrium</strong><sup>3</sup></a>. Right now we have a lot of <a id="word4" href="#def4" class="vocab"><strong>frantic</strong><sup>4</sup></a> analysis of ‘<a id="word5" href="#def5" class="vocab"><strong>time to power</strong><sup>5</sup></a>’, but the question at the end of that remains whether the <a id="word6" href="#def6" class="vocab"><strong>foundation models</strong><sup>6</sup></a> have sustainable <a id="word7" href="#def7" class="vocab"><strong>pricing power</strong><sup>7</sup></a>, <a id="word8" href="#def8" class="vocab"><strong>strategic leverage</strong><sup>8</sup></a> and <a id="word9" href="#def9" class="vocab"><strong>value capture</strong><sup>9</sup></a>, or whether they become <a id="word10" href="#def10" class="vocab"><strong>low-margin commodity infrastructure</strong><sup>10</sup></a> providers. At the moment, I think every dynamic we can see points to the latter.</p>
+
+    <p>Clearly, the situation today is <a id="word11" href="#def11" class="vocab"><strong>transitory</strong><sup>11</sup></a>. On the supply side, a trillion dollars or more of <a id="word12" href="#def12" class="vocab"><strong>data centre</strong><sup>12</sup></a> <a id="word13" href="#def13" class="vocab"><strong>capex</strong><sup>13</sup></a> is coming down the pipe (and plenty more <a id="word14" href="#def14" class="vocab"><strong>semiconductor</strong><sup>14</sup></a> capex behind that), <a id="word15" href="#def15" class="vocab"><strong>inference efficiency</strong><sup>15</sup></a> continues to improve very quickly, and new models are far more (or far less!) efficient in their token use. On the demand side, although the market has been <a id="word16" href="#def16" class="vocab"><strong>capacity-constrained</strong><sup>16</sup></a> since 2022, the crunch in the first half of this year has been driven by sudden <a id="word17" href="#def17" class="vocab"><strong>product-market fit</strong><sup>17</sup></a> in really just one use case, software development, and that’s actually a pretty small field (imagine if we had product-market fit for a consumer use case with hundreds of millions of <a id="word18" href="#def18" class="vocab"><strong>DAUs</strong><sup>18</sup></a> - today’s infrastructure couldn’t support it at any price). We don’t know what the next use-cases to scale will be, nor when that would be, nor what their token needs would be.</p>
+
+    <p>Going up a level, it’s been pretty widely reported that inference today has 40-50% <a id="word19" href="#def19" class="vocab"><strong>gross margins</strong><sup>19</sup></a>: this includes <a id="word20" href="#def20" class="vocab"><strong>depreciation</strong><sup>20</sup></a> of the associated server costs (or the cost of renting them), but we don’t really know the <a id="word21" href="#def21" class="vocab"><strong>asset life</strong><sup>21</sup></a> (five years? Seven years?) and obviously this doesn’t include the cost of training the next model a couple of times a year, which is currently far larger than revenue. In principle, inference is a <a id="word22" href="#def22" class="vocab"><strong>marginal cost</strong><sup>22</sup></a> and training is a <a id="word23" href="#def23" class="vocab"><strong>fixed cost</strong><sup>23</sup></a>, so with high enough revenue you can reach profitability, but we don’t know how training costs will change. On the other side of the table, it’s unclear how much of the surge in use in the last few months has an <a id="word24" href="#def24" class="vocab"><strong>ROI</strong><sup>24</sup></a> (or at least has an ROI that can be quantified to a <a id="word25" href="#def25" class="vocab"><strong>CFO</strong><sup>25</sup></a>), let alone any future use cases, and hence what prices people might be prepared to pay for them.</p>
+
+    <p>So, all the variables will move all over the place over the next 12 months, and move again over the next three to five years. How could we suggest where this will settle? How and where will supply, demand, price, capacity and capex get back into equilibrium? In theory, you can model this <a id="word26" href="#def26" class="vocab"><strong>bottom-up</strong><sup>26</sup></a>. You can make some <a id="word27" href="#def27" class="vocab"><strong>assumptions</strong><sup>27</sup></a> around each of the variables I suggested above, and then try to model out how many chips there are now, how many chips with what performance TSMC and the rest of the semis industry might be able to deliver when, and how fast all of that can be brought online in data centers and how fast those can be powered. Then you can wonder about <a id="word28" href="#def28" class="vocab"><strong>price discipline</strong><sup>28</sup></a>, and make some guesses about use cases. This will get you a number, but it will be rather like trying to build a five-year forecast for the broadband market in 1998: the spreadsheet will be very pretty, and you might even get close to the right number for this year, but there are too many unknown variables to make a useful forecast of a longer-term market structure.</p>
+
+    <p>In other words, we can say that token price is a function of supply and demand at a level between the sellers’ marginal cost and the buyers’ ROI, but we don’t actually know what supply, demand, marginal cost or ROI will be.</p>
+
+    <p>The other approach is to look from the <a id="word29" href="#def29" class="vocab"><strong>top down</strong><sup>29</sup></a>: how do things like this tend to play out? What are the <a id="word30" href="#def30" class="vocab"><strong>building blocks</strong><sup>30</sup></a>, and where can they go? Most of this conversation depends on what happens to this curve.</p>
+
+    <p>First, how many people will pay to be at the top right of the curve - to be at the <a id="word31" href="#def31" class="vocab"><strong>frontier</strong><sup>31</sup></a>? At one extreme there are already use cases that already work just fine with a small, old, perhaps <a id="word32" href="#def32" class="vocab"><strong>open source model</strong><sup>32</sup></a> that runs for ‘free’ <a id="word33" href="#def33" class="vocab"><strong>on-prem</strong><sup>33</sup></a> or on your phone; at the other extreme there will be some that get better results from the latest, most expensive frontier model, consuming lots of tokens for lots of money; and then there will be many that are somewhere in between. So, how many use cases get better results from going how far up the cost curve, and how many have an ROI for that, and how much of the use is handled by models that are smaller, cheaper, good ‘enough’ and much more <a id="word34" href="#def34" class="vocab"><strong>commoditised</strong><sup>34</sup></a>? The <a id="word35" href="#def35" class="vocab"><strong>Panglossian</strong><sup>35</sup></a> view is that ROI might go up with more expensive frontier models because they have better results, but where does that really apply?</p>
+
+    <p>Second, does the frontier keep moving significantly? This is obviously the most basic science question in AI: how long does the frontier keep getting better, how long does that keep needing more and more compute, and does that continue to happen at a rate that keeps it ahead of downward <a id="word36" href="#def36" class="vocab"><strong>pricing pressure</strong><sup>36</sup></a> from efficiency and capacity gains? Does the expensive head of the curve continue to be a thing?</p>
+
+    <p>Third, will there still be fierce competition between frontier models? Does the field shrink to fewer and fewer frontier models, perhaps with <a id="word37" href="#def37" class="vocab"><strong>network effects</strong><sup>37</sup></a> emerging? Do frontier models <a id="word38" href="#def38" class="vocab"><strong>diverge</strong><sup>38</sup></a>, with different models having much clearer leads in different fields? That could be another path to sustainable pricing power. Or do we continue with a mid-single-digit number of companies that are all making frontier models that all have generally equivalent capabilities? At the moment, everyone is using mostly the same science and mostly the same training data, and getting mostly the same results, and we don’t yet know of a network effect or any other <a id="word39" href="#def39" class="vocab"><strong>winner-takes-all</strong><sup>39</sup></a> effect that would let one company pull ahead, stay ahead, and do things that others could not, in some sustainable way. Does that change?</p>
+
+    <p>Fourth, how much of the value from those high-end use cases is captured by the frontier model itself? How much needs to be wrapped in <a id="word40" href="#def40" class="vocab"><strong>tooling</strong><sup>40</sup></a>, process, <a id="word41" href="#def41" class="vocab"><strong>proprietary data</strong><sup>41</sup></a>, <a id="word42" href="#def42" class="vocab"><strong>go-to-market</strong><sup>42</sup></a>, networks, support, and everything else associated with a traditional software company, even if you do need the big expensive frontier model underneath? Can that model do the whole thing, or is the model, no matter how good, still a piece of infrastructure that you use to make the actual product? At the extreme, can the model itself invent and make all of those things, and would that let them <a id="word43" href="#def43" class="vocab"><strong>charge by seat, by outcome</strong><sup>43</sup></a> or just take the profit? Or do even (or especially) the most sophisticated and high-value use-cases need to sit inside hundreds of new companies that can pick and choose which models to use?</p>
+
+    <p>None of these are <a id="word44" href="#def44" class="vocab"><strong>binaries</strong><sup>44</sup></a>: they’re all a question of degree, and they’ll probably vary quite a lot by use case. But at one extreme, there are two or three giant minds that run half of everything and have massive pricing power, and at the other extreme LLMs look like databases - there’ll be millions of them, some very big and some very small, and the value is in what you build on top - after all, every <a id="word45" href="#def45" class="vocab"><strong>SaaS</strong><sup>45</sup></a> company is a ‘<a id="word46" href="#def46" class="vocab"><strong>database wrapper</strong><sup>46</sup></a>’. There’s a future in which Anthropic (or a company we haven’t heard of yet) wins the whole thing and can set its own terms, and a future in which dozens of <a id="word47" href="#def47" class="vocab"><strong>routers</strong><sup>47</sup></a> run <a id="word48" href="#def48" class="vocab"><strong>real-time auctions</strong><sup>48</sup></a> to allocate your tasks across hundreds of low-margin <a id="word49" href="#def49" class="vocab"><strong>model-farms</strong><sup>49</sup></a> and a <a id="word50" href="#def50" class="vocab"><strong>benchmark company</strong><sup>50</sup></a> takes a fee on every single one.</p>
+
+    <p>I don’t think anyone can actually know the answer yet. I’ve said ‘we don’t know’ a lot, and that’s very deliberate. Part of the concept of the ‘<a id="word51" href="#def51" class="vocab"><strong>S Curve</strong><sup>51</sup></a>’ is that there’s a stage early in the emergence of a new technology where it’s clear that this is going to be huge but nothing else is clear at all - the mid 1990s for the internet, say, and 2008 or 2009 for mobile. There are places where you can take a view - for example, I’ve argued at length that I think chatbots are a poor interface that will struggle to <a id="word52" href="#def52" class="vocab"><strong>capture value up the stack</strong><sup>52</sup></a> - but we should presume there are big questions that we can’t see yet, let alone answer, and anyone picking one of the ten possible outcomes we can see and saying ‘it will be that one!’ is just guessing.</p>
+
+    <p>Meanwhile, there is <a id="word53" href="#def53" class="vocab"><strong>structural uncertainty</strong><sup>53</sup></a> at the early stages of every big new technology, but the uncertainty now is different, because we don’t have a good <a id="word54" href="#def54" class="vocab"><strong>theoretical understanding</strong><sup>54</sup></a> of why these models work so well and so we don’t know how much better they can get. In 1995, we didn’t know how the internet would evolve but we knew that there were less than 100m PCs on earth (and they were expensive) and that telcos couldn’t give everyone FTTH next year; in 2010 we didn’t know what the next iPhone would be but we knew it wouldn’t have <a id="word55" href="#def55" class="vocab"><strong>retinal projection</strong><sup>55</sup></a>. We knew the <a id="word56" href="#def56" class="vocab"><strong>physical limits</strong><sup>56</sup></a> in ways we don’t really know with LLMs. Next month a new approach could cut inference compute needs by 90%, or double demand, or both.</p>
+
+    <p>All of this has people hunting for patterns to recognise (indeed, it’s been observed that all conversations about AI end in a hunt for <a id="word57" href="#def57" class="vocab"><strong>metaphors</strong><sup>57</sup></a>). It has become common to draw comparisons with fiber, which had a massive <a id="word58" href="#def58" class="vocab"><strong>overbuild</strong><sup>58</sup></a> in the <a id="word59" href="#def59" class="vocab"><strong>Dotcom bubble</strong><sup>59</sup></a> that looks a bit like the infrastructure <a id="word60" href="#def60" class="vocab"><strong>build-out</strong><sup>60</sup></a> today. The narrow problem with that is that fiber construction was far ahead of demand, where AI compute construction is far behind demand, though, as above, we don’t know what that supply/demand balance will look like in the future. But the more relevant objection, I think, is that fiber construction was mostly fixed cost (digging holes) rather than marginal cost (more equipment), whereas growth in compute needs means you need to buy more compute.</p>
+
+    <p>That makes mobile data a more fruitful comparison here. Mobile networks have marginal cost for capacity, and like AI they had an enormous surge in usage 15 years ago, that overwhelmed capacity and had <a id="word61" href="#def61" class="vocab"><strong>carriers</strong><sup>61</sup></a> scrambling to add capacity and rebalance their pricing. Meanwhile, selling bits looks superficially similar to selling tokens: it’s an <a id="word62" href="#def62" class="vocab"><strong>opaque</strong><sup>62</sup></a> measure of marginal cost that doesn’t map in any transparent or intuitive way to use cases or value, and needs to be replaced with <a id="word63" href="#def63" class="vocab"><strong>bundles</strong><sup>63</sup></a> of some kind. But most importantly, in the last 20 years <a id="word64" href="#def64" class="vocab"><strong>cellular data traffic</strong><sup>64</sup></a> has risen by several <a id="word65" href="#def65" class="vocab"><strong>orders of magnitude</strong><sup>65</sup></a>, and this has become an enormous industry, with annual revenue of a trillion dollars and capex of $200 billion, but the stocks have gone nowhere, and all the value was captured by other people further <a id="word66" href="#def66" class="vocab"><strong>up the stack</strong><sup>66</sup></a>. This, of course, is one of the core questions for AI: is this going to be low-margin <a id="word67" href="#def67" class="vocab"><strong>commodity infrastructure</strong><sup>67</sup></a> with all the value captured by other people further up the stack?</p>
+
+    <p>Semiconductor manufacturing also has echoes of AI, since unlike cellular it has something of the same <a id="word68" href="#def68" class="vocab"><strong>escalating</strong><sup>68</sup></a> cost and complexity that we see in foundation models. <a id="word69" href="#def69" class="vocab"><strong>Rock’s Law</strong><sup>69</sup></a> pointed out that the cost of a cutting edge <a id="word70" href="#def70" class="vocab"><strong>fab</strong><sup>70</sup></a> doubles every four years: over time the frontier of semiconductors became so hard and so expensive that the number of players dropped from dozens to a handful and now really only one, TSMC. That’s another core question for AI: will this get so hard and so expensive that only a couple of people can do it, even without network effects? Equally, many semiconductor uses are further back along the same kind of price/performance curve I just discussed for AI. Even here, though, while TSMC has a <a id="word71" href="#def71" class="vocab"><strong>de facto monopoly</strong><sup>71</sup></a> on the frontier, and nice margins, it doesn’t actually capture a large share of value from the broader tech economy: <a id="word72" href="#def72" class="vocab"><strong>net income</strong><sup>72</sup></a> last year was $53bn, less than half of Apple alone.</p>
+
+    <p>There are plenty of other comparisons one could make here: in the last six months Sam Altman has compared OpenAI both to Windows, a high-margin <a id="word73" href="#def73" class="vocab"><strong>capital-light monopoly</strong><sup>73</sup></a> based on network effects, and electricity utilities, which are <a id="word74" href="#def74" class="vocab"><strong>natural monopolies</strong><sup>74</sup></a> but also low-margin <a id="word75" href="#def75" class="vocab"><strong>regulated utilities</strong><sup>75</sup></a> selling a pure <a id="word76" href="#def76" class="vocab"><strong>commodity</strong><sup>76</sup></a>. One could also point to cloud (three leading players with good margins and clearly distinguished propositions, but again limited value-capture). But none of these have <a id="word77" href="#def77" class="vocab"><strong>predictive value</strong><sup>77</sup></a>: <a id="word78" href="#def78" class="vocab"><strong>analogies</strong><sup>78</sup></a> don’t have predictive value. You can’t prove whether something will have the same outcome as mobile by arguing how much it’s like mobile: this was a mistake that many very clever people in tech made 15 years ago, claiming that Android would beat iOS because Android was ‘open’ and ‘open’ <a id="word79" href="#def79" class="vocab"><strong>Wintel</strong><sup>79</sup></a> had beaten the ‘closed’ Mac in the 1990s (it’s also the mistake that <a id="word80" href="#def80" class="vocab"><strong>doomers</strong><sup>80</sup></a> make when they claim that AI is ‘like’ nuclear weapons). Everything is different: bits, tokens and transistors are different, each of these examples are different from each other, and AI will be different too.</p>
+
+    <p>However, these examples do tell us, <a id="word81" href="#def81" class="vocab"><strong>empirically</strong><sup>81</sup></a>, that something can be very important, very expensive, change the world, and be full of very sophisticated science and engineering, and yet have a wide range of possible outcomes. There isn’t one inevitable path here: you can have <a id="word82" href="#def82" class="vocab"><strong>price equilibrium</strong><sup>82</sup></a> at high margins and at low margins, and with and without <a id="word83" href="#def83" class="vocab"><strong>market concentration</strong><sup>83</sup></a>, and you can’t hand-wave that away by talking about <a id="word84" href="#def84" class="vocab"><strong>AGI</strong><sup>84</sup></a> and saying ‘you don’t understand <a id="word85" href="#def85" class="vocab"><strong>exponentials</strong><sup>85</sup></a>!’</p>
+
+    <p>However, if one thread in everything I’ve written above is how much we don’t yet know, the other thread is that every path to foundation models having <a id="word86" href="#def86" class="vocab"><strong>market dominance</strong><sup>86</sup></a>, strategic leverage, value capture, winner-takes-all effects, or anything else other than becoming commodity infrastructure, requires something to change.</p>
+
+    <p>Maybe frontier models will become less competitive - yet in the last six months, Mark Zuckerberg and Elon Musk jumped from zero back onto the <a id="word87" href="#def87" class="vocab"><strong>leaderboards</strong><sup>87</sup></a>. Maybe network effects will emerge. Maybe chatbots can grow into products and don’t need to be wrapped in software. Maybe one lab will start out-executing all the others and pull ahead on sheer <a id="word88" href="#def88" class="vocab"><strong>product dynamism</strong><sup>88</sup></a> - Microsoft, Google, Facebook and Apple had to execute their way into a winning position before they had winner-takes-all efforts. Maybe something else will happen.</p>
+
+    <p>In particular, we have not one but two potential <a id="word89" href="#def89" class="vocab"><strong>dei ex machina</strong><sup>89</sup></a> - Trump and China. China is reportedly considering regulating open source and some people close to Trump have floated this as well (though since Meta abandoned Llama the US has no leading open model), and <a id="word90" href="#def90" class="vocab"><strong>export controls</strong><sup>90</sup></a> could expand and become <a id="word91" href="#def91" class="vocab"><strong>systematic</strong><sup>91</sup></a>. Many people see the pleas for regulation from Anthropic and (sometimes) OpenAI as a front for <a id="word92" href="#def92" class="vocab"><strong>regulatory capture</strong><sup>92</sup></a>, but either way, we can’t presume this will remain an entirely <a id="word93" href="#def93" class="vocab"><strong>free market</strong><sup>93</sup></a>.</p>
+
+    <p>Even so, that brings me back to the same point: the current market dynamics point to a future in which, as today’s supply crunch eases, frontier models move towards becoming commodity infrastructure, with all of the value built on top, and for a different outcome, something needs to happen that we don’t see yet.</p>
+  </article>
+</main>
+
+<div class="definitions">
+  <h2>Vocabulary</h2>
+
+  <div class="def-entry" id="def1"><a class="back" href="#word1">↑</a> <strong>1. Supply crunch</strong>: (suh-PLY krunch) - a shortage that happens when demand for something exceeds the available supply; <strong>shortage</strong>, <strong>scarcity</strong>, <strong>squeeze</strong>. The chip shortage created a supply crunch that drove prices sharply higher.</div>
+
+  <div class="def-entry" id="def2"><a class="back" href="#word2">↑</a> <strong>2. Shaken out</strong>: (SHAY-kuhn owt) - forced out of a market through competition, leaving only the strongest players; <strong>culled</strong>, <strong>consolidated</strong>, <strong>weeded out</strong>. Many weaker startups will be shaken out when the market corrects.</div>
+
+  <div class="def-entry" id="def3"><a class="back" href="#word3">↑</a> <strong>3. Equilibrium</strong>: (ee-kwuh-LIB-ree-um) - a state of balance in which opposing forces, like supply and demand, are equal; <strong>balance</strong>, <strong>stability</strong>, <strong>stasis</strong>. Prices eventually settle at an equilibrium between supply and demand.</div>
+
+  <div class="def-entry" id="def4"><a class="back" href="#word4">↑</a> <strong>4. Frantic</strong>: (FRAN-tik) - wild, hurried, and full of panic or anxiety; <strong>frenzied</strong>, <strong>feverish</strong>, <strong>hectic</strong>. There has been frantic speculation about when the new chip will ship.</div>
+
+  <div class="def-entry" id="def5"><a class="back" href="#word5">↑</a> <strong>5. Time to power</strong>: (TYM tuh POW-er) - the delay between a data centre being built and it actually being connected to electricity; <strong>power-up lead time</strong>, <strong>energization time</strong>. Investors scrutinise each project’s time to power before committing capital.</div>
+
+  <div class="def-entry" id="def6"><a class="back" href="#word6">↑</a> <strong>6. Foundation models</strong>: (fown-DAY-shuhn MOD-ulz) - large AI models trained on vast amounts of data that other applications are built on top of; <strong>base models</strong>, <strong>large language models</strong>. Developers build their apps on top of foundation models like GPT and Claude.</div>
+
+  <div class="def-entry" id="def7"><a class="back" href="#word7">↑</a> <strong>7. Pricing power</strong>: (PRY-sing POW-er) - a company’s ability to raise prices without losing many customers; <strong>pricing leverage</strong>, <strong>pricing clout</strong>. A monopoly has strong pricing power because customers have nowhere else to go.</div>
+
+  <div class="def-entry" id="def8"><a class="back" href="#word8">↑</a> <strong>8. Strategic leverage</strong>: (struh-TEE-jik LEV-er-ij) - the ability to use your position or resources to gain an advantage in negotiations; <strong>bargaining power</strong>, <strong>clout</strong>, <strong>influence</strong>. Controlling the scarce chips gives the company strategic leverage over its rivals.</div>
+
+  <div class="def-entry" id="def9"><a class="back" href="#word9">↑</a> <strong>9. Value capture</strong>: (VAL-yoo KAP-cher) - the share of the total value created that a company actually keeps as profit; <strong>value appropriation</strong>, <strong>profit capture</strong>. The question is whether AI labs can achieve real value capture or watch the profits flow elsewhere.</div>
+
+  <div class="def-entry" id="def10"><a class="back" href="#word10">↑</a> <strong>10. Low-margin commodity infrastructure</strong>: (loh-MAR-jin kuh-MOD-ih-tee IN-fruh-struk-cher) - basic, undifferentiated services that are sold cheaply and earn little profit; <strong>commodity utility</strong>, <strong>low-profit backbone</strong>. Electricity grids are low-margin commodity infrastructure.</div>
+
+  <div class="def-entry" id="def11"><a class="back" href="#word11">↑</a> <strong>11. Transitory</strong>: (TRAN-zih-tor-ee) - lasting only a short time; temporary; <strong>temporary</strong>, <strong>fleeting</strong>, <strong>short-lived</strong>. The shortage is transitory and will ease as new supply arrives.</div>
+
+  <div class="def-entry" id="def12"><a class="back" href="#word12">↑</a> <strong>12. Data centre</strong>: (DAY-tuh SEN-ter) - a large facility filled with servers that power computing and data storage; <strong>server farm</strong>, <strong>data hall</strong>. The company announced a new data centre outside Frankfurt.</div>
+
+  <div class="def-entry" id="def13"><a class="back" href="#word13">↑</a> <strong>13. Capex</strong>: (KAP-eks) - capital expenditure; money spent on long-term assets like buildings and equipment; <strong>capital spending</strong>, <strong>capital investment</strong>. The firm’s capex tripled as it built new factories.</div>
+
+  <div class="def-entry" id="def14"><a class="back" href="#word14">↑</a> <strong>14. Semiconductor</strong>: (sem-ee-kun-DUK-ter) - a material such as silicon used to make chips, and the industry that makes them; <strong>chip</strong>, <strong>microchip</strong>, <strong>integrated circuit</strong>. Semiconductor demand collapsed after the boom ended.</div>
+
+  <div class="def-entry" id="def15"><a class="back" href="#word15">↑</a> <strong>15. Inference efficiency</strong>: (IN-fuh-rens ih-FISH-en-see) - how much compute and cost it takes to run a trained model to answer a query; <strong>inference cost-effectiveness</strong>, <strong>serving efficiency</strong>. Improving inference efficiency lets a model answer more queries for the same cost.</div>
+
+  <div class="def-entry" id="def16"><a class="back" href="#word16">↑</a> <strong>16. Capacity-constrained</strong>: (kuh-PAS-ih-tee kun-STRAYND) - limited by a lack of available capacity or resources; <strong>supply-limited</strong>, <strong>bottlenecked</strong>. The market has been capacity-constrained since 2022.</div>
+
+  <div class="def-entry" id="def17"><a class="back" href="#word17">↑</a> <strong>17. Product-market fit</strong>: (PROD-ukt MAR-kit fit) - the point where a product satisfies strong, real demand in a market; <strong>market traction</strong>, <strong>demand validation</strong>. The app found product-market fit when developers adopted it almost overnight.</div>
+
+  <div class="def-entry" id="def18"><a class="back" href="#word18">↑</a> <strong>18. DAUs</strong>: (dee-ay-YOOZ) - Daily Active Users; the number of people who use a product each day; <strong>daily users</strong>, <strong>daily actives</strong>. The game hit 50 million DAUs within a month.</div>
+
+  <div class="def-entry" id="def19"><a class="back" href="#word19">↑</a> <strong>19. Gross margins</strong>: (GROHS MAR-jinz) - revenue minus the direct cost of goods sold, expressed as a percentage of revenue; <strong>gross profit margin</strong>, <strong>markup</strong>. The business earns 45% gross margins on every unit.</div>
+
+  <div class="def-entry" id="def20"><a class="back" href="#word20">↑</a> <strong>20. Depreciation</strong>: (dih-pree-shee-AY-shun) - the accounting practice of spreading an asset’s cost over its useful life as it loses value; <strong>write-down</strong>, <strong>amortisation</strong>. Depreciation of the servers is spread over five years.</div>
+
+  <div class="def-entry" id="def21"><a class="back" href="#word21">↑</a> <strong>21. Asset life</strong>: (AS-set lyf) - the period of time an asset is expected to remain useful and productive; <strong>useful life</strong>, <strong>service life</strong>. If the asset life is seven years, the annual depreciation is lower.</div>
+
+  <div class="def-entry" id="def22"><a class="back" href="#word22">↑</a> <strong>22. Marginal cost</strong>: (MAR-jih-nul kost) - the cost of producing one more unit of something; <strong>incremental cost</strong>, <strong>variable cost</strong>. For software, the marginal cost of one more user is nearly zero.</div>
+
+  <div class="def-entry" id="def23"><a class="back" href="#word23">↑</a> <strong>23. Fixed cost</strong>: (FIKST kost) - a cost that stays the same no matter how much you produce; <strong>overhead</strong>, <strong>standing cost</strong>. Training a model is a fixed cost; serving tokens is a marginal cost.</div>
+
+  <div class="def-entry" id="def24"><a class="back" href="#word24">↑</a> <strong>24. ROI</strong>: (ar-oh-EYE) - Return On Investment; the profit gained relative to what was spent; <strong>return</strong>, <strong>payback</strong>. The CFO asked what ROI the new software would deliver.</div>
+
+  <div class="def-entry" id="def25"><a class="back" href="#word25">↑</a> <strong>25. CFO</strong>: (see-eff-OH) - Chief Financial Officer; the executive in charge of a company’s finances; <strong>finance chief</strong>, <strong>finance director</strong>. The CFO must approve any large capital expense.</div>
+
+  <div class="def-entry" id="def26"><a class="back" href="#word26">↑</a> <strong>26. Bottom-up</strong>: (BOT-um UP) - building an estimate or model from the individual components upward to the whole; <strong>component-based</strong>, <strong>ground-up</strong>. A bottom-up forecast starts with chip supply and builds up to total capacity.</div>
+
+  <div class="def-entry" id="def27"><a class="back" href="#word27">↑</a> <strong>27. Assumptions</strong>: (uh-SUMP-shunz) - things accepted as true without proof, used as a starting point; <strong>premises</strong>, <strong>presumptions</strong>, <strong>givens</strong>. The model rests on several bold assumptions about future demand.</div>
+
+  <div class="def-entry" id="def28"><a class="back" href="#word28">↑</a> <strong>28. Price discipline</strong>: (PRYS DIS-ih-plin) - restraint in pricing to avoid a race to the bottom and protect profit margins; <strong>pricing restraint</strong>, <strong>margin discipline</strong>. The carriers showed price discipline by refusing to undercut each other.</div>
+
+  <div class="def-entry" id="def29"><a class="back" href="#word29">↑</a> <strong>29. Top-down</strong>: (TOP DOWN) - analysing from the big picture down to the details; <strong>high-level</strong>, <strong>macro-to-micro</strong>. A top-down view starts with how industries usually evolve.</div>
+
+  <div class="def-entry" id="def30"><a class="back" href="#word30">↑</a> <strong>30. Building blocks</strong>: (BIL-ding bloks) - the basic components from which something larger is constructed; <strong>components</strong>, <strong>fundamentals</strong>, <strong>elements</strong>. Chips, power, and models are the building blocks of AI.</div>
+
+  <div class="def-entry" id="def31"><a class="back" href="#word31">↑</a> <strong>31. Frontier</strong>: (FRUN-teer) - the leading edge; the most advanced models or technology; <strong>cutting edge</strong>, <strong>state of the art</strong>, <strong>leading edge</strong>. Only a few labs can afford to train frontier models.</div>
+
+  <div class="def-entry" id="def32"><a class="back" href="#word32">↑</a> <strong>32. Open source model</strong>: (OH-pen sors MOD-ul) - a model whose code and weights are freely available to use and modify; <strong>open-weight model</strong>, <strong>public model</strong>. They ran an open source model on their own servers.</div>
+
+  <div class="def-entry" id="def33"><a class="back" href="#word33">↑</a> <strong>33. On-prem</strong>: (on-PREM) - short for on-premises; running software on your own hardware rather than in the cloud; <strong>in-house</strong>, <strong>self-hosted</strong>, <strong>on-site</strong>. The bank runs the model on-prem to protect its data.</div>
+
+  <div class="def-entry" id="def34"><a class="back" href="#word34">↑</a> <strong>34. Commoditised</strong>: (kuh-MOD-ih-tyzd) - made interchangeable with competitors so that price becomes the main difference; <strong>genericised</strong>, <strong>standardised</strong>, <strong>undifferentiated</strong>. Once a technology is commoditised, profit margins collapse.</div>
+
+  <div class="def-entry" id="def35"><a class="back" href="#word35">↑</a> <strong>35. Panglossian</strong>: (pan-GLOSS-ee-un) - naively, unrealistically optimistic; <strong>rose-tinted</strong>, <strong>Pollyannaish</strong>, <strong>overoptimistic</strong>. The Panglossian view assumes that profits will keep rising forever.</div>
+
+  <div class="def-entry" id="def36"><a class="back" href="#word36">↑</a> <strong>36. Pricing pressure</strong>: (PRY-sing PRESH-er) - competitive forces that push prices downward; <strong>price competition</strong>, <strong>margin squeeze</strong>. Efficiency gains put downward pricing pressure on tokens.</div>
+
+  <div class="def-entry" id="def37"><a class="back" href="#word37">↑</a> <strong>37. Network effects</strong>: (NET-wurk ih-FEKTS) - the effect where a product becomes more valuable as more people use it; <strong>network externalities</strong>, <strong>viral growth</strong>. Social networks benefit from powerful network effects.</div>
+
+  <div class="def-entry" id="def38"><a class="back" href="#word38">↑</a> <strong>38. Diverge</strong>: (dy-VURJ) - to move apart and become different from each other; <strong>branch off</strong>, <strong>separate</strong>, <strong>split</strong>. Frontier models may diverge, each taking the lead in a different field.</div>
+
+  <div class="def-entry" id="def39"><a class="back" href="#word39">↑</a> <strong>39. Winner-takes-all</strong>: (WIN-er tayks awl) - describing a market in which one player captures nearly all the value; <strong>winner-takes-most</strong>, <strong>all-or-nothing</strong>. Search became a winner-takes-all market dominated by Google.</div>
+
+  <div class="def-entry" id="def40"><a class="back" href="#word40">↑</a> <strong>40. Tooling</strong>: (TOO-ling) - the software tools built around a product to make it usable and complete; <strong>tooling infrastructure</strong>, <strong>developer tools</strong>. The model needs extensive tooling around it to become a real product.</div>
+
+  <div class="def-entry" id="def41"><a class="back" href="#word41">↑</a> <strong>41. Proprietary data</strong>: (pruh-PRY-ih-ter-ee DAY-tuh) - data owned exclusively by one company and not available to others; <strong>private data</strong>, <strong>exclusive data</strong>. Their edge comes from proprietary data that rivals cannot access.</div>
+
+  <div class="def-entry" id="def42"><a class="back" href="#word42">↑</a> <strong>42. Go-to-market</strong>: (GOH tuh MAR-kit) - a company’s plan for reaching and selling to its customers; <strong>market-entry strategy</strong>, <strong>launch strategy</strong>. The startup built a strong go-to-market engine.</div>
+
+  <div class="def-entry" id="def43"><a class="back" href="#word43">↑</a> <strong>43. Charge by seat, by outcome</strong>: (charj by SEET, by OUT-kum) - pricing per user licence or per result delivered, rather than per unit of usage; <strong>seat-based pricing</strong>, <strong>outcome-based pricing</strong>. Instead of charging per token, they charge by seat or by outcome.</div>
+
+  <div class="def-entry" id="def44"><a class="back" href="#word44">↑</a> <strong>44. Binaries</strong>: (BY-nuh-reez) - choices with only two possible states; either/or questions; <strong>dichotomies</strong>, <strong>black-and-white choices</strong>. None of these questions are simple binaries.</div>
+
+  <div class="def-entry" id="def45"><a class="back" href="#word45">↑</a> <strong>45. SaaS</strong>: (sass) - Software as a Service; software delivered over the internet on a subscription basis; <strong>cloud software</strong>, <strong>subscription software</strong>. Every SaaS company rents its software rather than selling it.</div>
+
+  <div class="def-entry" id="def46"><a class="back" href="#word46">↑</a> <strong>46. Database wrapper</strong>: (DAY-tuh-bays RAP-er) - a product that is mostly a thin layer built on top of an underlying database or model; <strong>thin layer</strong>, <strong>front-end veneer</strong>. Critics dismiss many apps as little more than a database wrapper.</div>
+
+  <div class="def-entry" id="def47"><a class="back" href="#word47">↑</a> <strong>47. Routers</strong>: (ROW-terz) - in AI, systems that direct each incoming request to the most suitable model; <strong>request dispatchers</strong>, <strong>orchestration layers</strong>. Routers send each task to whichever model handles it best.</div>
+
+  <div class="def-entry" id="def48"><a class="back" href="#word48">↑</a> <strong>48. Real-time auctions</strong>: (REEL tym AWK-shunz) - automated bidding that happens instantly for each transaction; <strong>programmatic bidding</strong>, <strong>live auctions</strong>. Real-time auctions could set the price of every token request.</div>
+
+  <div class="def-entry" id="def49"><a class="back" href="#word49">↑</a> <strong>49. Model-farms</strong>: (MOD-ul farmz) - large fleets of models run as low-cost commodity capacity; <strong>model fleets</strong>, <strong>serving farms</strong>. Dozens of low-margin model-farms would compete mainly on price.</div>
+
+  <div class="def-entry" id="def50"><a class="back" href="#word50">↑</a> <strong>50. Benchmark company</strong>: (BENCH-mark KUM-puh-nee) - a firm that measures and certifies performance or quality standards; <strong>standards body</strong>, <strong>rating agency</strong>. A benchmark company could take a small fee on every transaction.</div>
+
+  <div class="def-entry" id="def51"><a class="back" href="#word51">↑</a> <strong>51. S Curve</strong>: (ESS kurv) - an S-shaped curve showing how adoption grows slowly, then rapidly, then flattens out; <strong>adoption curve</strong>, <strong>sigmoid curve</strong>. New technologies follow an S Curve of adoption.</div>
+
+  <div class="def-entry" id="def52"><a class="back" href="#word52">↑</a> <strong>52. Capture value up the stack</strong>: (KAP-cher VAL-yoo up thuh STAK) - for a higher-layer product, not the base layer, to earn the profit; <strong>monetise the application layer</strong>. Chatbots struggle to capture value up the stack.</div>
+
+  <div class="def-entry" id="def53"><a class="back" href="#word53">↑</a> <strong>53. Structural uncertainty</strong>: (STRUK-chur-ul un-SUR-tin-tee) - deep, fundamental unknowns about how an entire system will turn out; <strong>fundamental uncertainty</strong>, <strong>systemic unknowns</strong>. The industry faces structural uncertainty about its own economics.</div>
+
+  <div class="def-entry" id="def54"><a class="back" href="#word54">↑</a> <strong>54. Theoretical understanding</strong>: (thee-uh-RET-ih-kul un-der-STAN-ding) - knowing the underlying principles of how something works; <strong>mechanistic explanation</strong>, <strong>first-principles grasp</strong>. We lack a theoretical understanding of why these models work.</div>
+
+  <div class="def-entry" id="def55"><a class="back" href="#word55">↑</a> <strong>55. Retinal projection</strong>: (RET-ih-nul pruh-JEK-shun) - displaying images directly onto the eye’s retina; <strong>virtual retinal display</strong>. In 2010 we knew the next phone wouldn’t have retinal projection.</div>
+
+  <div class="def-entry" id="def56"><a class="back" href="#word56">↑</a> <strong>56. Physical limits</strong>: (FIZ-ih-kul LIM-its) - constraints imposed by the laws of physics; <strong>hard limits</strong>, <strong>natural boundaries</strong>. We knew the physical limits of networks in ways we don’t for LLMs.</div>
+
+  <div class="def-entry" id="def57"><a class="back" href="#word57">↑</a> <strong>57. Metaphors</strong>: (MET-uh-forz) - figures of speech that compare one thing to another; <strong>analogies</strong>, <strong>comparisons</strong>, <strong>images</strong>. Every AI debate ends in a hunt for metaphors.</div>
+
+  <div class="def-entry" id="def58"><a class="back" href="#word58">↑</a> <strong>58. Overbuild</strong>: (OH-ver-bild) - building far more capacity than demand actually requires; <strong>overcapacity</strong>, <strong>oversupply</strong>, <strong>glut</strong>. The fiber overbuild of the dotcom era left empty pipes everywhere.</div>
+
+  <div class="def-entry" id="def59"><a class="back" href="#word59">↑</a> <strong>59. Dotcom bubble</strong>: (DOT-kom BUB-ul) - the late-1990s speculative boom and crash in internet stocks; <strong>tech bubble</strong>, <strong>internet bubble</strong>. The Dotcom bubble burst in the year 2000.</div>
+
+  <div class="def-entry" id="def60"><a class="back" href="#word60">↑</a> <strong>60. Build-out</strong>: (BILD owt) - the large-scale construction and rollout of infrastructure; <strong>rollout</strong>, <strong>deployment</strong>, <strong>expansion</strong>. The AI build-out is happening faster than demand is growing.</div>
+
+  <div class="def-entry" id="def61"><a class="back" href="#word61">↑</a> <strong>61. Carriers</strong>: (KAR-ee-erz) - telecom companies that operate mobile and cellular networks; <strong>operators</strong>, <strong>telcos</strong>, <strong>network providers</strong>. Carriers scrambled to add capacity as usage surged.</div>
+
+  <div class="def-entry" id="def62"><a class="back" href="#word62">↑</a> <strong>62. Opaque</strong>: (oh-PAYK) - not transparent; hard to see through or understand; <strong>unclear</strong>, <strong>obscure</strong>, <strong>murky</strong>. Token pricing is opaque to most buyers.</div>
+
+  <div class="def-entry" id="def63"><a class="back" href="#word63">↑</a> <strong>63. Bundles</strong>: (BUN-dulz) - packages that combine several things into a single offering or price; <strong>packages</strong>, <strong>plans</strong>, <strong>tiers</strong>. Selling raw bits required replacing them with bundles.</div>
+
+  <div class="def-entry" id="def64"><a class="back" href="#word64">↑</a> <strong>64. Cellular data traffic</strong>: (SEL-yuh-ler DAY-tuh TRAF-ik) - the volume of data carried over mobile networks; <strong>mobile data usage</strong>, <strong>wireless traffic</strong>. Cellular data traffic rose by orders of magnitude in two decades.</div>
+
+  <div class="def-entry" id="def65"><a class="back" href="#word65">↑</a> <strong>65. Orders of magnitude</strong>: (OR-derz uv MAG-nih-tood) - multiples of ten; very large changes in scale; <strong>exponential jumps</strong>, <strong>tenfold increases</strong>. Traffic rose by several orders of magnitude in twenty years.</div>
+
+  <div class="def-entry" id="def66"><a class="back" href="#word66">↑</a> <strong>66. Up the stack</strong>: (up thuh STAK) - higher in the technology layers, toward applications rather than infrastructure; <strong>higher in the stack</strong>, <strong>at the application layer</strong>. All the value was captured by companies further up the stack.</div>
+
+  <div class="def-entry" id="def67"><a class="back" href="#word67">↑</a> <strong>67. Commodity infrastructure</strong>: (kuh-MOD-ih-tee IN-fruh-struk-cher) - basic infrastructure sold like a commodity, with little differentiation between providers; <strong>commodity utility</strong>, <strong>undifferentiated infrastructure</strong>. Frontier models may end up as commodity infrastructure.</div>
+
+  <div class="def-entry" id="def68"><a class="back" href="#word68">↑</a> <strong>68. Escalating</strong>: (ES-kuh-lay-ting) - rising or increasing rapidly; <strong>mounting</strong>, <strong>growing</strong>, <strong>accelerating</strong>. The escalating cost of fabs is forcing consolidation in the industry.</div>
+
+  <div class="def-entry" id="def69"><a class="back" href="#word69">↑</a> <strong>69. Rock’s Law</strong>: (ROKS law) - the observation that the cost of a new semiconductor fab doubles every four years; <strong>Moore’s second law</strong>. Rock’s Law helps explain why only TSMC builds cutting-edge fabs.</div>
+
+  <div class="def-entry" id="def70"><a class="back" href="#word70">↑</a> <strong>70. Fab</strong>: (fab) - short for fabrication plant; a factory where semiconductor chips are manufactured; <strong>foundry</strong>, <strong>chip plant</strong>, <strong>wafer fab</strong>. Building a new fab can cost over $20 billion.</div>
+
+  <div class="def-entry" id="def71"><a class="back" href="#word71">↑</a> <strong>71. De facto monopoly</strong>: (day FAK-toh muh-NOP-uh-lee) - a monopoly in practice, even if not by law; <strong>practical monopoly</strong>, <strong>effective monopoly</strong>. TSMC holds a de facto monopoly on advanced chips.</div>
+
+  <div class="def-entry" id="def72"><a class="back" href="#word72">↑</a> <strong>72. Net income</strong>: (net IN-kum) - profit after all expenses and taxes have been paid; <strong>bottom line</strong>, <strong>net profit</strong>, <strong>earnings</strong>. Its net income was $53 billion last year.</div>
+
+  <div class="def-entry" id="def73"><a class="back" href="#word73">↑</a> <strong>73. Capital-light monopoly</strong>: (KAP-ih-tul lyte muh-NOP-uh-lee) - a monopoly that needs very little capital to run once it is established; <strong>asset-light monopoly</strong>. Windows was a high-margin, capital-light monopoly.</div>
+
+  <div class="def-entry" id="def74"><a class="back" href="#word74">↑</a> <strong>74. Natural monopolies</strong>: (NACH-er-ul muh-NOP-uh-leez) - industries where one provider is most efficient because of very high fixed costs; <strong>structural monopolies</strong>. Utilities are natural monopolies because duplicating the grid is wasteful.</div>
+
+  <div class="def-entry" id="def75"><a class="back" href="#word75">↑</a> <strong>75. Regulated utilities</strong>: (REG-yuh-lay-ted yoo-TIL-ih-teez) - essential services like power and water whose prices are controlled by government; <strong>public utilities</strong>, <strong>rate-regulated providers</strong>. Electricity companies are low-margin regulated utilities.</div>
+
+  <div class="def-entry" id="def76"><a class="back" href="#word76">↑</a> <strong>76. Commodity</strong>: (kuh-MOD-ih-tee) - a basic, interchangeable good where price is the main difference between sellers; <strong>staple</strong>, <strong>undifferentiated product</strong>. Electricity is sold as a pure commodity.</div>
+
+  <div class="def-entry" id="def77"><a class="back" href="#word77">↑</a> <strong>77. Predictive value</strong>: (prih-DIK-tiv VAL-yoo) - the ability to forecast future outcomes; <strong>forecasting power</strong>, <strong>predictive power</strong>. Analogies have no predictive value.</div>
+
+  <div class="def-entry" id="def78"><a class="back" href="#word78">↑</a> <strong>78. Analogies</strong>: (uh-NAL-uh-jeez) - comparisons showing how two different things are similar; <strong>parallels</strong>, <strong>comparisons</strong>. People reach for analogies like fiber or mobile to explain AI.</div>
+
+  <div class="def-entry" id="def79"><a class="back" href="#word79">↑</a> <strong>79. Wintel</strong>: (WIN-tel) - the Windows-plus-Intel PC monopoly that dominated the 1990s; <strong>the Windows-Intel duopoly</strong>. Open Wintel had beaten the closed Mac in the 1990s.</div>
+
+  <div class="def-entry" id="def80"><a class="back" href="#word80">↑</a> <strong>80. Doomers</strong>: (DOO-merz) - people who predict catastrophic outcomes, especially from AI; <strong>pessimists</strong>, <strong>catastrophists</strong>. Doomers claim that AI is like nuclear weapons.</div>
+
+  <div class="def-entry" id="def81"><a class="back" href="#word81">↑</a> <strong>81. Empirically</strong>: (em-PIR-ih-kuh-lee) - based on observation and evidence rather than on theory; <strong>observationally</strong>, <strong>in practice</strong>. Empirically, world-changing technologies have had many different outcomes.</div>
+
+  <div class="def-entry" id="def82"><a class="back" href="#word82">↑</a> <strong>82. Price equilibrium</strong>: (PRYS ee-kwuh-LIB-ree-um) - the price at which supply equals demand; <strong>market-clearing price</strong>. The market will eventually find a price equilibrium.</div>
+
+  <div class="def-entry" id="def83"><a class="back" href="#word83">↑</a> <strong>83. Market concentration</strong>: (MAR-kit kon-sen-TRAY-shun) - how much of a market is held by the top few firms; <strong>consolidation</strong>, <strong>oligopoly</strong>. The field could end with either high or low market concentration.</div>
+
+  <div class="def-entry" id="def84"><a class="back" href="#word84">↑</a> <strong>84. AGI</strong>: (ay-jee-EYE) - Artificial General Intelligence; AI matching human ability across most tasks; <strong>human-level AI</strong>, <strong>strong AI</strong>. Talk of AGI should not replace analysis of economics.</div>
+
+  <div class="def-entry" id="def85"><a class="back" href="#word85">↑</a> <strong>85. Exponentials</strong>: (ek-spuh-NEN-shulz) - quantities that grow by repeated multiplication, extremely fast; <strong>exponential growth</strong>, <strong>compounding growth</strong>. Saying “you don’t understand exponentials” is not an argument.</div>
+
+  <div class="def-entry" id="def86"><a class="back" href="#word86">↑</a> <strong>86. Market dominance</strong>: (MAR-kit DOM-ih-nunts) - a firm’s leading, controlling position in a market; <strong>market leadership</strong>, <strong>dominance</strong>. No lab has yet achieved lasting market dominance.</div>
+
+  <div class="def-entry" id="def87"><a class="back" href="#word87">↑</a> <strong>87. Leaderboards</strong>: (LEE-der-bordz) - public rankings of model performance on benchmarks; <strong>rankings</strong>, <strong>scoreboards</strong>. Zuckerberg and Musk jumped back onto the leaderboards.</div>
+
+  <div class="def-entry" id="def88"><a class="back" href="#word88">↑</a> <strong>88. Product dynamism</strong>: (PROD-ukt DY-nuh-miz-um) - the energy and speed with which a company ships and improves products; <strong>execution velocity</strong>, <strong>product energy</strong>. They pulled ahead on sheer product dynamism.</div>
+
+  <div class="def-entry" id="def89"><a class="back" href="#word89">↑</a> <strong>89. Dei ex machina</strong>: (DAY-ee eks MAK-ih-nuh) - an unexpected outside force that suddenly resolves a situation (from the Latin “deus ex machina”); <strong>wild card</strong>, <strong>external shock</strong>. Trump and China are two potential dei ex machina.</div>
+
+  <div class="def-entry" id="def90"><a class="back" href="#word90">↑</a> <strong>90. Export controls</strong>: (EKS-port kun-TROHLZ) - government restrictions on selling certain goods to other countries; <strong>trade restrictions</strong>, <strong>export bans</strong>. Export controls could expand and become systematic.</div>
+
+  <div class="def-entry" id="def91"><a class="back" href="#word91">↑</a> <strong>91. Systematic</strong>: (sis-tuh-MAT-ik) - done according to a fixed plan; thorough and organised; <strong>methodical</strong>, <strong>organised</strong>, <strong>comprehensive</strong>. The controls could become systematic rather than ad hoc.</div>
+
+  <div class="def-entry" id="def92"><a class="back" href="#word92">↑</a> <strong>92. Regulatory capture</strong>: (REG-yuh-luh-tor-ee KAP-cher) - when regulators act in the interest of the industry they are supposed to regulate; <strong>industry capture</strong>, <strong>regulatory bias</strong>. Critics call the calls for regulation regulatory capture.</div>
+
+  <div class="def-entry" id="def93"><a class="back" href="#word93">↑</a> <strong>93. Free market</strong>: (FREE MAR-kit) - an economy where prices are set by supply and demand without government control; <strong>open market</strong>, <strong>laissez-faire market</strong>. We cannot assume this will remain a free market.</div>
+</div>
+
+<footer>Vocabulary Treatment — self-contained HTML, opens in any browser</footer>
+
+</body>
+</html>
