@@ -84,6 +84,28 @@
     color: var(--navy-deep);
     border-bottom: 1px solid var(--navy-deep);
   }
+  .terence-note {
+    font-family: 'Source Sans 3', sans-serif;
+    background: #f7ecc9;
+    border-left: 4px solid var(--gold);
+    padding: 1rem 1.3rem;
+    margin: 0 0 1.6rem;
+    border-radius: 0 4px 4px 0;
+  }
+  .terence-note .label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.35rem;
+  }
+  .terence-note p {
+    margin: 0;
+    font-weight: 700;
+    color: var(--ink);
+  }
   .definitions {
     max-width: 720px;
     margin: 1.5rem auto 3rem;
@@ -145,6 +167,11 @@
 
     <p>So, all the variables will move all over the place over the next 12 months, and move again over the next three to five years. How could we suggest where this will settle? How and where will supply, demand, price, capacity and capex get back into equilibrium? In theory, you can model this <a id="word26" href="#def26" class="vocab"><strong>bottom-up</strong><sup>26</sup></a>. You can make some <a id="word27" href="#def27" class="vocab"><strong>assumptions</strong><sup>27</sup></a> around each of the variables I suggested above, and then try to model out how many chips there are now, how many chips with what performance TSMC and the rest of the semis industry might be able to deliver when, and how fast all of that can be brought online in data centers and how fast those can be powered. Then you can wonder about <a id="word28" href="#def28" class="vocab"><strong>price discipline</strong><sup>28</sup></a>, and make some guesses about use cases. This will get you a number, but it will be rather like trying to build a five-year forecast for the broadband market in 1998: the spreadsheet will be very pretty, and you might even get close to the right number for this year, but there are too many unknown variables to make a useful forecast of a longer-term market structure.</p>
 
+    <div class="terence-note">
+      <span class="label">Terence’s Note</span>
+      <p>Yes, the broadband market might be a good comparison as far as a technology marker. But the velocity of AI introductions and technology breakthroughs knows no equal, moving at a pace that makes the broadband sector’s multi-year upgrade cycles look glacial by comparison.</p>
+    </div>
+
     <p>In other words, we can say that token price is a function of supply and demand at a level between the sellers’ marginal cost and the buyers’ ROI, but we don’t actually know what supply, demand, marginal cost or ROI will be.</p>
 
     <p>The other approach is to look from the <a id="word29" href="#def29" class="vocab"><strong>top down</strong><sup>29</sup></a>: how do things like this tend to play out? What are the <a id="word30" href="#def30" class="vocab"><strong>building blocks</strong><sup>30</sup></a>, and where can they go? Most of this conversation depends on what happens to this curve.</p>
@@ -154,6 +181,11 @@
     <p>Second, does the frontier keep moving significantly? This is obviously the most basic science question in AI: how long does the frontier keep getting better, how long does that keep needing more and more compute, and does that continue to happen at a rate that keeps it ahead of downward <a id="word36" href="#def36" class="vocab"><strong>pricing pressure</strong><sup>36</sup></a> from efficiency and capacity gains? Does the expensive head of the curve continue to be a thing?</p>
 
     <p>Third, will there still be fierce competition between frontier models? Does the field shrink to fewer and fewer frontier models, perhaps with <a id="word37" href="#def37" class="vocab"><strong>network effects</strong><sup>37</sup></a> emerging? Do frontier models <a id="word38" href="#def38" class="vocab"><strong>diverge</strong><sup>38</sup></a>, with different models having much clearer leads in different fields? That could be another path to sustainable pricing power. Or do we continue with a mid-single-digit number of companies that are all making frontier models that all have generally equivalent capabilities? At the moment, everyone is using mostly the same science and mostly the same training data, and getting mostly the same results, and we don’t yet know of a network effect or any other <a id="word39" href="#def39" class="vocab"><strong>winner-takes-all</strong><sup>39</sup></a> effect that would let one company pull ahead, stay ahead, and do things that others could not, in some sustainable way. Does that change?</p>
+
+    <div class="terence-note">
+      <span class="label">Terence’s Note</span>
+      <p>And what if someone, maybe another dark horse like DeepSeek, announces a model that brings not only a new approach, but a pricing model that makes AI computing a utility like electricity as some believe it will become?</p>
+    </div>
 
     <p>Fourth, how much of the value from those high-end use cases is captured by the frontier model itself? How much needs to be wrapped in <a id="word40" href="#def40" class="vocab"><strong>tooling</strong><sup>40</sup></a>, process, <a id="word41" href="#def41" class="vocab"><strong>proprietary data</strong><sup>41</sup></a>, <a id="word42" href="#def42" class="vocab"><strong>go-to-market</strong><sup>42</sup></a>, networks, support, and everything else associated with a traditional software company, even if you do need the big expensive frontier model underneath? Can that model do the whole thing, or is the model, no matter how good, still a piece of infrastructure that you use to make the actual product? At the extreme, can the model itself invent and make all of those things, and would that let them <a id="word43" href="#def43" class="vocab"><strong>charge by seat, by outcome</strong><sup>43</sup></a> or just take the profit? Or do even (or especially) the most sophisticated and high-value use-cases need to sit inside hundreds of new companies that can pick and choose which models to use?</p>
 
@@ -166,6 +198,11 @@
     <p>All of this has people hunting for patterns to recognise (indeed, it’s been observed that all conversations about AI end in a hunt for <a id="word57" href="#def57" class="vocab"><strong>metaphors</strong><sup>57</sup></a>). It has become common to draw comparisons with fiber, which had a massive <a id="word58" href="#def58" class="vocab"><strong>overbuild</strong><sup>58</sup></a> in the <a id="word59" href="#def59" class="vocab"><strong>Dotcom bubble</strong><sup>59</sup></a> that looks a bit like the infrastructure <a id="word60" href="#def60" class="vocab"><strong>build-out</strong><sup>60</sup></a> today. The narrow problem with that is that fiber construction was far ahead of demand, where AI compute construction is far behind demand, though, as above, we don’t know what that supply/demand balance will look like in the future. But the more relevant objection, I think, is that fiber construction was mostly fixed cost (digging holes) rather than marginal cost (more equipment), whereas growth in compute needs means you need to buy more compute.</p>
 
     <p>That makes mobile data a more fruitful comparison here. Mobile networks have marginal cost for capacity, and like AI they had an enormous surge in usage 15 years ago, that overwhelmed capacity and had <a id="word61" href="#def61" class="vocab"><strong>carriers</strong><sup>61</sup></a> scrambling to add capacity and rebalance their pricing. Meanwhile, selling bits looks superficially similar to selling tokens: it’s an <a id="word62" href="#def62" class="vocab"><strong>opaque</strong><sup>62</sup></a> measure of marginal cost that doesn’t map in any transparent or intuitive way to use cases or value, and needs to be replaced with <a id="word63" href="#def63" class="vocab"><strong>bundles</strong><sup>63</sup></a> of some kind. But most importantly, in the last 20 years <a id="word64" href="#def64" class="vocab"><strong>cellular data traffic</strong><sup>64</sup></a> has risen by several <a id="word65" href="#def65" class="vocab"><strong>orders of magnitude</strong><sup>65</sup></a>, and this has become an enormous industry, with annual revenue of a trillion dollars and capex of $200 billion, but the stocks have gone nowhere, and all the value was captured by other people further <a id="word66" href="#def66" class="vocab"><strong>up the stack</strong><sup>66</sup></a>. This, of course, is one of the core questions for AI: is this going to be low-margin <a id="word67" href="#def67" class="vocab"><strong>commodity infrastructure</strong><sup>67</sup></a> with all the value captured by other people further up the stack?</p>
+
+    <div class="terence-note">
+      <span class="label">Terence’s Note</span>
+      <p>Today that surely means Nvidia, whose market cap of $5.5 trillion, is the highest ever achieved by any company.</p>
+    </div>
 
     <p>Semiconductor manufacturing also has echoes of AI, since unlike cellular it has something of the same <a id="word68" href="#def68" class="vocab"><strong>escalating</strong><sup>68</sup></a> cost and complexity that we see in foundation models. <a id="word69" href="#def69" class="vocab"><strong>Rock’s Law</strong><sup>69</sup></a> pointed out that the cost of a cutting edge <a id="word70" href="#def70" class="vocab"><strong>fab</strong><sup>70</sup></a> doubles every four years: over time the frontier of semiconductors became so hard and so expensive that the number of players dropped from dozens to a handful and now really only one, TSMC. That’s another core question for AI: will this get so hard and so expensive that only a couple of people can do it, even without network effects? Equally, many semiconductor uses are further back along the same kind of price/performance curve I just discussed for AI. Even here, though, while TSMC has a <a id="word71" href="#def71" class="vocab"><strong>de facto monopoly</strong><sup>71</sup></a> on the frontier, and nice margins, it doesn’t actually capture a large share of value from the broader tech economy: <a id="word72" href="#def72" class="vocab"><strong>net income</strong><sup>72</sup></a> last year was $53bn, less than half of Apple alone.</p>
 
